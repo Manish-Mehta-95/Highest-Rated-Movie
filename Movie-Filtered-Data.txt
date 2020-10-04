@@ -1,0 +1,36 @@
+----------
+"movies" :
+----------
+Schema:
+root
+ |-- movies_id: string (nullable = true)
+ |-- movie_title: string (nullable = true)
+ |-- movie_release_year: string (nullable = true)
+ |-- director_name: string (nullable = false)
+ 
+Dataframe:
++---------+--------------------------------+------------------+------------------------------+
+|movies_id|movie_title                     |movie_release_year|director_name                 |
++---------+--------------------------------+------------------+------------------------------+
+|1        |La Antena                       |2007              |Esteban Sapir                 |
+|2        |Elementary Particles            |2006              |Oskar Roehler                 |
+|3        |It's Winter                     |2006              |Rafi Pitts                    |
+|4        |Kirikou and the Wild Beasts     |2005              |Michel Ocelot, Bénédicte Galup|
+|5        |Padre Nuestro                   |2007              |Christopher Zalla             |
+|6        |The Perfume of the Lady in Black|2005              |Bruno Podalydès               |
+|7        |Riviera                         |2005              |Anne Villacèque               |
+|8        |Someone Else's Happiness        |2005              |Fien Troch                    |
+|9        |Young Yakuza                    |2007              |Jean-Pierre Limosin           |
+|10       |The Return                      |2003              |Andrey Zvyagintsev            |
+|11       |Il grido                        |1957              |Michelangelo Antonioni        |
+|12       |The General                     |1926              |Buster Keaton, Clyde Bruckman |
+|13       |L'Age d'Or                      |1930              |Luis Buñuel                   |
+|14       |Les bonnes femmes               |1960              |Claude Chabrol                |
+|15       |Cops                            |1922              |Buster Keaton, Edward F. Cline|
+|16       |Tokyo Eyes                      |1998              |Jean-Pierre Limosin           |
+|17       |Dead in 3 Days                  |2006              |Andreas Prochaska             |
+|18       |The Wind of the Night           |1999              |Philippe Garrel               |
+|20       |Chicken Heart                   |2002              |Hiroshi Shimizu               |
+|21       |After Life                      |1998              |Hirokazu Kore-eda             |
++---------+--------------------------------+------------------+------------------------------+
+only showing top 20 rows
