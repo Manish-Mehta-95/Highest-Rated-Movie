@@ -1,0 +1,17 @@
+-------
+Result:
+-------
++--------+--------------------------------------------------------------------+------------+--------------------+-----------+
+|Movie_ID|Movie_Name                                                          |Release_Year|Directed_By         |Final_Score|
++--------+--------------------------------------------------------------------+------------+--------------------+-----------+
+|488     |The Godfather                                                       |1972        |Francis Ford Coppola|4.18       |
+|303     |2001: A Space Odyssey                                               |1968        |Stanley Kubrick     |4.13       |
+|161     |Pulp Fiction                                                        |1994        |Quentin Tarantino   |4.13       |
+|147     |A Clockwork Orange                                                  |1971        |Stanley Kubrick     |4.06       |
+|204     |Taxi Driver                                                         |1976        |Martin Scorsese     |4.06       |
+|1270    |The Godfather: Part II                                              |1974        |Francis Ford Coppola|4.03       |
+|1537    |Apocalypse Now                                                      |1979        |Francis Ford Coppola|4.03       |
+|405     |The Shining                                                         |1980        |Stanley Kubrick     |4.03       |
+|165     |Seven Samurai                                                       |1954        |Akira Kurosawa      |4.01       |
+|315     |Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb|1964        |Stanley Kubrick     |4.01       |
++--------+--------------------------------------------------------------------+------------+--------------------+-----------+
