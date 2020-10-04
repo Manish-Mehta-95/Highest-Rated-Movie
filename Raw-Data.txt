@@ -1,0 +1,85 @@
+-------------------
+"raw_data_movies" :
+-------------------
+Schema:-
+root
+ |-- movie_id: integer (nullable = true)
+ |-- movie_title: string (nullable = true)
+ |-- movie_release_year: string (nullable = true)
+ |-- movie_url: string (nullable = true)
+ |-- movie_title_language: string (nullable = true)
+ |-- director_name: string (nullable = true)
+ |-- director_url: string (nullable = true)
+
+Dataframe:
++--------+--------------------+------------------+--------------------+--------------------+--------------------+--------------------+
+|movie_id|         movie_title|movie_release_year|           movie_url|movie_title_language|       director_name|        director_url|
++--------+--------------------+------------------+--------------------+--------------------+--------------------+--------------------+
+|       1|           La Antena|            2007.0|http://mubi.com/f...|                  en|       Esteban Sapir|http://mubi.com/c...|
+|       2|Elementary Particles|            2006.0|http://mubi.com/f...|                  en|       Oskar Roehler|http://mubi.com/c...|
+|       3|         It's Winter|            2006.0|http://mubi.com/f...|                  en|          Rafi Pitts|http://mubi.com/c...|
+|       4|Kirikou and the W...|            2005.0|http://mubi.com/f...|                  en|Michel Ocelot, Bé...|http://mubi.com/c...|
+|       5|       Padre Nuestro|            2007.0|http://mubi.com/f...|                  en|   Christopher Zalla|http://mubi.com/c...|
+|       6|The Perfume of th...|            2005.0|http://mubi.com/f...|                  en|     Bruno Podalydès|http://mubi.com/c...|
+|       7|             Riviera|            2005.0|http://mubi.com/f...|                  en|     Anne Villacèque|http://mubi.com/c...|
+|       8|Someone Else's Ha...|            2005.0|http://mubi.com/f...|                  en|          Fien Troch|http://mubi.com/c...|
+|       9|        Young Yakuza|            2007.0|http://mubi.com/f...|                  en| Jean-Pierre Limosin|http://mubi.com/c...|
+|      10|          The Return|            2003.0|http://mubi.com/f...|                  en|  Andrey Zvyagintsev|http://mubi.com/c...|
+|      11|            Il grido|            1957.0|http://mubi.com/f...|                  en|Michelangelo Anto...|http://mubi.com/c...|
+|      12|         The General|            1926.0|http://mubi.com/f...|                  en|Buster Keaton, Cl...|http://mubi.com/c...|
+|      13|          L'Age d'Or|            1930.0|http://mubi.com/f...|                  en|         Luis Buñuel|http://mubi.com/c...|
+|      14|   Les bonnes femmes|            1960.0|http://mubi.com/f...|                  en|      Claude Chabrol|http://mubi.com/c...|
+|      15|                Cops|            1922.0|http://mubi.com/f...|                  en|Buster Keaton, Ed...|http://mubi.com/c...|
+|      16|          Tokyo Eyes|            1998.0|http://mubi.com/f...|                  en| Jean-Pierre Limosin|http://mubi.com/c...|
+|      17|      Dead in 3 Days|            2006.0|http://mubi.com/f...|                  en|   Andreas Prochaska|http://mubi.com/c...|
+|      18|The Wind of the N...|            1999.0|http://mubi.com/f...|                  en|     Philippe Garrel|http://mubi.com/c...|
+|      20|       Chicken Heart|            2002.0|http://mubi.com/f...|                  en|     Hiroshi Shimizu|http://mubi.com/c...|
+|      21|          After Life|            1998.0|http://mubi.com/f...|                  en|   Hirokazu Kore-eda|http://mubi.com/c...|
++--------+--------------------+------------------+--------------------+--------------------+--------------------+--------------------+
+only showing top 20 rows
+
+--------------------
+"raw_data_ratings" :
+--------------------
+Schema:
+root
+ |-- movie_id: string (nullable = true)
+ |-- rating_id: string (nullable = true)
+ |-- rating_url: string (nullable = true)
+ |-- rating_score: string (nullable = true)
+ |-- critic_comments: string (nullable = true)
+ |-- user_id: string (nullable = true)
+ |-- user_eligible_for_trial: string (nullable = true)
+ |-- user_has_payment_method: string (nullable = true)
+ 
+Dataframe:
++--------+---------+--------------------+------------+---------------+--------+-----------------------+-----------------------+
+|movie_id|rating_id|          rating_url|rating_score|critic_comments| user_id|user_eligible_for_trial|user_has_payment_method|
++--------+---------+--------------------+------------+---------------+--------+-----------------------+-----------------------+
+|    1066| 15610495|http://mubi.com/f...|         3.0|              0|41579158|                   True|                  False|
+|    1066| 10704606|http://mubi.com/f...|         2.0|              0|85981819|                  False|                   True|
+|    1066| 10177114|http://mubi.com/f...|         2.0|              0| 4208563|                   True|                   True|
+|    1066| 10130280|http://mubi.com/f...|         3.0|              0| 9820140|                   True|                  False|
+|    1066|  8357049|http://mubi.com/f...|         4.0|              0|68654088|                   True|                   True|
+|    1066|  6220019|http://mubi.com/f...|         4.0|              0|97262846|                   True|                  False|
+|    1066|  5255936|http://mubi.com/f...|         4.0|              0|52128819|                  False|                   True|
+|    1066|  5192128|http://mubi.com/f...|         3.0|              0|57756708|                   True|                   True|
+|    1066|  5008733|http://mubi.com/f...|         4.0|              0|58420503|                   True|                   True|
+|    1066|  4519384|http://mubi.com/f...|         3.0|              0|78114925|                   True|                  False|
+|    1066|  4247213|http://mubi.com/f...|         5.0|              0|84114365|                   True|                  False|
+|    1066|  4200868|http://mubi.com/f...|         2.0|              0|15492642|                   True|                   True|
+|    1066|  3884097|http://mubi.com/f...|         4.0|              0|29755671|                   True|                  False|
+|    1066|  2484577|http://mubi.com/f...|         4.0|              0| 8516503|                   True|                   True|
+|    1066|  1619000|http://mubi.com/f...|         4.0|              0| 9315002|                   True|                   True|
+|    1066|  1451885|http://mubi.com/f...|         3.0|              0|93302487|                   True|                  False|
+|    1066|   960731|http://mubi.com/f...|         4.0|              0|18845680|                   True|                  False|
+|    1066|   887653|http://mubi.com/f...|         3.0|              0|80455170|                   True|                  False|
+|    1066|   682638|http://mubi.com/f...|         3.0|              0|88637641|                   True|                  False|
+|    1066|   406826|http://mubi.com/f...|         3.0|              0|65861201|                   True|                  False|
++--------+---------+--------------------+------------+---------------+--------+-----------------------+-----------------------+
+only showing top 20 rows 
+
+
+
+
+
